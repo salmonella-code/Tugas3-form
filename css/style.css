@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(179, 178, 178);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.jumbotron {
+  width: 800px;
+  margin: 50px auto;
+}
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text],input[type=number], select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  box-shadow: 2px 2px 5px #c7c6c6;
+}
+
+textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  box-shadow: 2px 2px 5px #c7c6c6;
+  resize: none;
+}
+
+label{
+  font-weight: bold;
+}
+
+span{
+  color: #b1b1b1;
+}
+
+.url, .nama{
+  justify-content: space-between;
+  display:flex; 
+  align-items: center;
+}
+
+select{
+  appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+#harga{
+  /* width: 35%; */
+  justify-items: self-start;
+}
+
+.harga-text{
+  width: 70%;
+  justify-content: space-between;
+  display:flex; 
+  align-items: center;
+}
+
+.bentuk{
+  display: flex;
+}
+
+.bentuk input{
+  width: 47%;
+}
+
+.bentuk select{
+  width: 47%;
+}
+
+.ukuran-text{
+  width: 100%;
+  justify-content: space-between;
+  display:flex; 
+  align-items: center;
+}
+
+.ukuran input{
+  width: 25%;
+}
+
+.ukuran select{
+  width: 22%;
+}
+
+#upload-btn{
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  background-color: white;
+  color: orangered;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 5px #c7c6c6;
+
+}
+
+#upload-btn p{
+  text-align: center;
+  transform: translateY(50);
+  font-size: 72px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.jumlah {
+  display: flex;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.jumlah input {
+  width: 100px;
+  margin: 0 auto;
+  height: 36px;
+  text-align: center;
+  border-radius: 0;
+  border: 1px solid rgb(0, 0, 0, .09);
+  border-right: none;
+  border-left: none;
+}
+
+.jumlah .kiri {
+  clear: both;
+  border-radius: 4px 0px 0px 4px;
+  width: 50px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0, .09);
+  box-shadow: 2px 2px 5px #c7c6c6;
+}
+
+.jumlah .kanan {
+  border-radius: 0px 4px 4px 0px;
+  background-color: white;
+  width: 50px;
+  border: 1px solid rgb(0, 0, 0, .09);
+  box-shadow: 2px 2px 5px #c7c6c6;
+}
+
+.btn{
+  margin-top: 30px;
+}
+
+.btn button{
+  width: 250px;
+  height: 50px;
+  border: none;
+  box-shadow: 2px 2px 5px #c7c6c6;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.tambah{
+  background-color: white;
+  color: black;
+}
+
+.beli{
+  background-color: orangered;
+  color: white;
+}
+
+.tambah:hover{
+  background-color: gray;
+  color: white;
+}
+
+.beli:hover{
+  background-color: rgb(148, 67, 0);
+}
+
+footer{
+  text-align: center;
+  color: white;
+}

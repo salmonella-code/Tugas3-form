@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamad Salman Farizi | 20180040048 | Tugas3 | Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <form action="/action_page.php">
+        <div class="container">
+          <h1>FORM ORDER</h1>
+          <p>
+            Jur...,isi detail produk yang ingin kamu titip di bawah ini ya,
+            mohon isi dengan teliti agar total biaya akurat.
+          </p>
+
+          <h3>INFORMASI PRODUK</h3>
+          <div class="url">
+            <label for="url">URL</label>
+            <span>Required</span>
+          </div>
+          <input type="text" id="url" placeholder="www.tokopedia.com" />
+
+          <div class="nama">
+            <label for="nama">NAMA PRODUK</label>
+            <span>Required</span>
+          </div>
+          <input type="text" id="nama" placeholder="Tulis Nama Produk" />
+
+          <label for="kategori">KATEGORI PRODUK</label>
+
+          <select name="kategori" id="kategori">
+            <option value="pilih">Pilih</option>
+            <option value="baju">Baju</option>
+            <option value="celana">Celana</option>
+          </select>
+
+          <div class="harga">
+            <div class="harga-text">
+              <label for="harga">HARGA/PCS</label>
+              <span style="padding-right: 20%">Required</span>
+              <span>Required</span>
+            </div>
+            <input
+              type="text"
+              id="harga"
+              placeholder="Tulis Harga Produk"
+              style="width: 35%"
+            />
+
+            <select name="harga" id="harga" style="width: 35%">
+              <option value="USD">USD - $</option>
+              <option value="RP">IND - RP</option>
+            </select>
+          </div>
+
+          <div class="bentuk">
+            <div class="berat">
+              <div class="berat-text">
+                <label for="berat">BERAT PRODUK/PCS</label>
+                <span>Required</span>
+              </div>
+              <input type="text" id="berat" placeholder="Berat" />
+              <select name="berat" id="berat">
+                <option value="gram">Gram</option>
+                <option value="kg">Kilogram</option>
+                <option value="mm">Miligram</option>
+              </select>
+            </div>
+
+            <div class="ukuran">
+              <div class="ukuran-text">
+                <label for="ukuran">UKURAN (P x L xT)</label>
+                <span>Optional</span>
+              </div>
+              <input type="text" placeholder="Panjang" />
+              <input type="text" placeholder="Lebar" />
+              <input type="text" placeholder="Tinggi" />
+              <select name="ukuran" id="ukuran">
+                <option value="Cm">Cm</option>
+                <option value="M">M</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="catatan">CATATAN UNTUK JURAGAN JASTIP</label>
+          <textarea
+            name="catatan"
+            id="catatan"
+            cols="30"
+            rows="10"
+            placeholder="Contoh: Putih, XL, XLL"
+          ></textarea>
+
+          <label for="jumlah">JUMLAH </label>
+          <div class="jumlah">
+            <button
+              type="button"
+              onclick="this.parentNode.querySelector('[type=number]').stepDown();"
+              class="kiri"
+            >
+              -
+            </button>
+
+            <input type="number" name="number" min="0" max="100" value="0" />
+
+            <button
+              type="button"
+              onclick="this.parentNode.querySelector('[type=number]').stepUp();"
+              class="kanan"
+            >
+              +
+            </button>
+          </div>
+
+          <label for="negara">NEGARA</label>
+          <br />
+          <select name="negara" id="negara" style="width: 30%">
+            <option value="ind">Indonesia</option>
+            <option value="usa">Amerika</option>
+            <option value="sig">Singapura</option>
+          </select>
+          <br />
+
+          <label for="img">
+            UPLOAD IMAGE
+            <br />
+            (Maks 2.5 MB)
+          </label>
+          <br />
+          <input type="file" id="upload" hidden />
+          <label for="upload" id="upload-btn"><p>+</p></label>
+          <span>Required</span>
+
+          <div class="btn">
+            <button type="submit" class="tambah">Tambah ke keranjang</button>
+            <button type="submit" class="beli">Beliin</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>Copyright &copy; Code by: Mohamad Salman Farizi | 20180040048</p>
+    </footer>
+  </body>
+</html>
